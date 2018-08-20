@@ -1,0 +1,1 @@
+define("deadComponent",["core"],function(a){"use strict";var b=a.compMixins;return{displayName:"DeadComponent",mixins:[b.skinBasedComp],statics:{useSantaTypes:true},getSkinProperties:function(){return{title:{},desc:{},desc2:{}}}}});

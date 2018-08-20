@@ -1,0 +1,1 @@
+define("bgImageStrip",["core","utils"],function(a,b){"use strict";return{displayName:"BgImageStrip",mixins:[a.compMixins.skinBasedComp],statics:{useSantaTypes:true},getSkinProperties:function(){return{bg:{style:{},"data-type":b.balataConsts.BG_IMAGE}}}}});

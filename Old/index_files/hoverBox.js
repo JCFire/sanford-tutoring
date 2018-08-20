@@ -1,0 +1,1 @@
+define("hoverBox",["lodash","mediaContainerFactory"],function(a,b){"use strict";return b.createMediaContainer("HoverBox")});
