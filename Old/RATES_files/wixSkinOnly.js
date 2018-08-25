@@ -1,1 +1,0 @@
-define("wixSkinOnly",["core"],function(a){"use strict";var b=a.compMixins;return{displayName:"WixSkinOnly",mixins:[b.skinBasedComp],statics:{useSantaTypes:true},getSkinProperties:function(){return{}}}});

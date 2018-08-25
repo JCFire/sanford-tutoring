@@ -1,1 +1,0 @@
-define("container",["lodash","containerCommon"],function(a,b){"use strict";var c=b.mixins.containerMixin;return{displayName:"WixContainer",mixins:[c],statics:{useSantaTypes:true},getSkinProperties:function(){return{inlineContent:{children:this.props.children}}}}});

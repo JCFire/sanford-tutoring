@@ -1,1 +1,0 @@
-define("groupContainer",["lodash","containerCommon"],function(a,b){"use strict";var c=b.mixins.containerMixin;return{displayName:"WixGroupContainer",mixins:[c],statics:{useSantaTypes:true},getSkinProperties:function(){return{"":{style:{}},inlineContent:{children:this.props.children}}}}});

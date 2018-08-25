@@ -1,1 +1,0 @@
-define("column",["lodash","mediaContainerFactory"],function(a,b){"use strict";return b.createMediaContainer("Column")});
