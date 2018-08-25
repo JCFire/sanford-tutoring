@@ -1,0 +1,3 @@
+purgecss --css vendor/bootstrap/css/bootstrap.min.css --content src/*.html --out ./ --keyframes true --fontFace true
+html-minifier --sort-attributes --sort-class-name --remove-comments --minify-css --collapse-whitespace --input-dir public --output-dir dist
+firebase deploy

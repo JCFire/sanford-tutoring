@@ -1,0 +1,1 @@
+purgecss --css vendor/bootstrap/css/bootstrap.min.css --content index.html about.html contact.html testimonials.html services.html --out ./ --keyframes true --fontFace true
