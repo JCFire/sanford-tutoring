@@ -2,11 +2,11 @@
     "short_name": "Tutoring",
     "name": "Sanford Tutoring",
     "icons": [
-      {
-        "src": "/images/logo-60x60",
-        "type": "image/png",
-        "sizes": "60x60"
-      }
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
     ],
     "start_url": "/index.html",
     "background_color": "#FFFFFF",
