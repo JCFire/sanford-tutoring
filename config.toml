@@ -1,0 +1,11 @@
+title = "Sanford Tutoring"
+baseURL = "https://sanfordtutoring.com/"
+languageCode = "en-us"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+googleAnalytics = "UA-52476970-1"
+
+# The site's parameters
+[params]
+
+  dateFormat = "6 January 2006"
+  home = "Home"

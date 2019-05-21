@@ -1,4 +1,2 @@
-run get-css.bat
-copy contents of bootstrap.min.css into .html files
-run build.bat
+run hugo
 run firebase deploy

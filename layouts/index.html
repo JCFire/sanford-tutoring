@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" .}}
+  </head>
+    <body>
+      <!-- Navigation -->  
+      {{ partial "nav.html" .}}
+
+      <!-- Hero Image -->
+  <header class="container mb-4">
+    <picture>
+      <source type="image/webp" 
+      srcset="/images/hero-a-1110x555.webp 1110w, /images/hero-a-930x465.webp 930w, /images/hero-a-690x345.webp 690w, /images/hero-a-510x255.webp 510w" 
+      sizes="(min-width: 1200px) 1110px, (min-width: 992px) 930px, (min-width: 768px) 690px, (min-width: 576px) 510px">
+      <source type="image/jpeg"
+      srcset="/images/hero-a-1110x555.jpg 1110w, /images/hero-a-930x465.jpg 930w, /images/hero-a-690x345.jpg 690w, /images/hero-a-510x255.jpg 510w"
+      sizes="(min-width: 1200px) 1110px, (min-width: 992px) 930px, (min-width: 768px) 690px, (min-width: 576px) 510px">
+      <img alt="Sandy with students" src="/images/hero-a-1110x555.jpg">
+    </picture>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Sections -->
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header text-center">About Me</h4>
+          <div class="card-body">
+            <p class="card-text">I am passionate about math. My aim is to provide a safe, friendly, fun environment where
+              the student will not only be successful but also enjoy learning.</p>
+          </div>
+          <div class="card-footer">
+            <a class="card-link" href="/about">Learn About Me</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header text-center">Testimonials</h4>
+          <div class="card-body">
+            <p class="card-text">Don't take my word for it, hear from parents who stood in your shoes, chose
+              me, and were thrilled with the results!</p>
+          </div>
+          <div class="card-footer">
+            <a class="card-link" href="/testimonials">Learn From Others</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header text-center">Why Choose Me</h4>
+          <div class="card-body">
+            <p class="card-text">Home education is all about choice, and you have lots of them. Luckily this is an easy one!
+              Here's how I can help.</p>
+          </div>
+          <div class="card-footer">
+            <a class="card-link" href="/services">Learn What I Do</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    <hr />
+    <!-- Features Section -->
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <h2>Private Home Education Tutoring</h2>
+        <p>Creating confidence and success:</p>
+        <ul>
+          <li>
+            Math Tutoring/Teaching
+          </li>
+          <li>
+            Home Education Academic Advising
+          </li>
+          <li>
+            SAT/PSAT/ACT Math Prep
+          </li>
+          <li>
+            Home Education Evaluations
+          </li>
+          <li>
+            High School Transcript Preparation
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <img class="img-fluid rounded" src="/images/services.jpg" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->  
+      {{ partial "footer.html" .}}
+    </body>
+</html>

@@ -1,0 +1,81 @@
++++
++++
+<div id="thanks-alert" class="alert alert-success" style="display: none;" role="alert">
+  Message sent!
+</div>
+<script>
+  if (window.location.hash === '#success'){
+    document.getElementById("thanks-alert").style.display = '';
+    window.setTimeout(function() {
+      document.getElementById("thanks-alert").style.display = 'none';
+    }, 3000);
+  }
+</script>
+
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Content Row -->
+  <div class="row">
+    <!-- Map Column -->
+    <div class="col-lg-8 mb-4">
+      <!-- Embedded Google Map -->
+      <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=5054%20Knotty%20Pine%20Court%2C%20Sanford%2C%20FL%2032771&key=AIzaSyArq4kW9YG7EdQmexyNRFY3mDVpHtJ8MIA"></iframe>
+    </div>
+    <!-- Contact Details Column -->
+    <div class="col-lg-4 mb-4">
+      <h3>Contact Details</h3>
+      <p>
+        5054 Knotty Pine Court,
+        <br>Sanford, FL 32771
+        <br>
+      </p>
+      <p>
+        Phone: (561) 654-1889
+      </p>
+      <p>
+        Email: <a href="mailto:sandytiller@yahoo.com">sandytiller@yahoo.com</a>
+      </p>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <!-- Contact Form -->
+  <div class="row">
+    <div class="col-lg-8 mb-4">
+      <h3>Send me a Message</h3>
+      <form name="sentMessage" id="contactForm" action="https://formspree.io/sandytiller@yahoo.com" method="POST">
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Full Name:</label>
+            <input type="text" class="form-control" name="name" required>
+          </div>
+        </div>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Phone Number:</label>
+            <input type="tel" class="form-control" name="phone" required>
+          </div>
+        </div>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Email Address:</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+        </div>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Message:</label>
+            <textarea rows="10" cols="100" class="form-control" name="message" maxlength="999" style="resize:none"></textarea>
+          </div>
+        </div>
+        <input type="hidden" name="_next" value="https://sanford-tutoring.firebaseapp.com/contact.html#success" />
+        <input type="hidden" name="_subject" value="Message from the website" />
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+</div>
