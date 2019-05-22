@@ -63,6 +63,10 @@
     font-size: 2.25rem;
   }
 
+  picture img {
+    width:100%;
+  }
+
   #navbar-toggle-cbox:checked~.collapse {
     display: block;
   }
@@ -80,15 +84,7 @@
     height: auto;
     max-width: 8rem;
   }
-
-  #services img {
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-    width: 160px;
-    height: 160px;
-  }
-
+  
   .small{
     font-size:1rem;
   }
@@ -135,7 +131,8 @@ if (!doNotTrack) {
 
 </head>
 <body>
-  
+  <header>
+
 <nav class="navbar navbar-expand-lg navbar-light container">
   
   <a class="navbar-brand" href="/">
@@ -162,13 +159,20 @@ if (!doNotTrack) {
     </div>
   </div>
 </nav>
+</header>
   
   
     <main><!-- Hero Image -->
 <header class="container mb-4">
-  <img alt="Sandy with students" src="/images/hero-b-1110x555.jpg" 
-  srcset="/images/hero-b-1110x555.jpg 1110w, /images/hero-b-930x465.jpg 930w, /images/hero-b-690x345.jpg 690w, /images/hero-b-510x255.jpg 510w" 
-  sizes="(min-width: 1200px) 1110px, (min-width: 992px) 930px, (min-width: 768px) 690px, (min-width: 576px) 510px">
+  <picture>
+    <source type="image/webp" 
+    srcset="/images/hero-b-1110x555.webp 1110w, /images/hero-b-930x465.webp 930w, /images/hero-b-690x345.webp 690w, /images/hero-b-510x255.webp 510w" 
+    sizes="(min-width: 1200px) 1110px, (min-width: 992px) 930px, (min-width: 768px) 690px, (min-width: 576px) 510px">
+    <source type="image/jpeg"
+    srcset="/images/hero-b-1110x555.jpg 1110w, /images/hero-b-930x465.jpg 930w, /images/hero-b-690x345.jpg 690w, /images/hero-b-510x255.jpg 510w"
+    sizes="(min-width: 1200px) 1110px, (min-width: 992px) 930px, (min-width: 768px) 690px, (min-width: 576px) 510px">
+    <img alt="Sandy with students" src="/images/hero-b-1110x555.jpg">
+  </picture>
 </header>
 
 <!-- Page Content -->

@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sanfordtutoring.com/contact/</guid>
-      <description>Message sent!if (window.location.hash === &#39;#success&#39;){document.getElementById(&#34;thanks-alert&#34;).style.display = &#39;&#39;;window.setTimeout(function() {document.getElementById(&#34;thanks-alert&#34;).style.display = &#39;none&#39;;}, 3000);}Contact Details5054 Knotty Pine Court,Sanford, FL 32771Phone: (561) 654-1889Email: sandytiller@yahoo.comSend me a MessageFull Name:Phone Number:Email Address:Message:Send Message</description>
+      <description>Message sent!if (window.location.hash === &#39;#success&#39;){document.getElementById(&#34;thanks-alert&#34;).style.display = &#39;&#39;;window.setTimeout(function() {document.getElementById(&#34;thanks-alert&#34;).style.display = &#39;none&#39;;}, 3000);}header {box-shadow:0 2px 4px 0 rgba(0,0,0,0.14);}Have a question or want to know more?Leave me a Message belowFull Name:Phone Number:Email Address:Message:Send MessageOr reach me directlyPhone: (561) 654-1889Email: sandytiller@yahoo.</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sanfordtutoring.com/services/</guid>
-      <description>TROUBLESHOOTINGAre you home educating and just need a little extra help with difficult concepts? I can fill in those gapsfor you.TEST PREPARATIONIs your child about to take the PSAT, SAT or ACT where a high score can mean scholarship money? I can help prepareyour child in a way that will maximize his score.CO-OPERATIVE INSTRUCTIONAre you home educating but don&#39;t feel capable of teaching math?</description>
+      <description>#services img {border-radius: 50%;width: 160px;height: 160px;flex-shrink: 0;}@media(max-width:768px){.chunk{display:inline-flex; flex-wrap:wrap; justify-content:center;}#services h2{text-align: center;}}TROUBLESHOOTINGAre you home educating and just need a little extra help with difficult concepts? I can fill in those gapsfor you.TEST PREPARATIONIs your child about to take the PSAT, SAT or ACT where a high score can mean scholarship money?</description>
     </item>
     
     <item>

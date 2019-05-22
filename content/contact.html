@@ -11,39 +11,18 @@
     }, 3000);
   }
 </script>
-
+<style>
+  header {box-shadow:0 2px 4px 0 rgba(0,0,0,0.14);}
+</style>
 <!-- Page Content -->
 <div class="container">
-
-  <!-- Content Row -->
-  <div class="row">
-    <!-- Map Column -->
-    <div class="col-lg-8 mb-4">
-      <!-- Embedded Google Map -->
-      <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=5054%20Knotty%20Pine%20Court%2C%20Sanford%2C%20FL%2032771&key=AIzaSyArq4kW9YG7EdQmexyNRFY3mDVpHtJ8MIA"></iframe>
-    </div>
-    <!-- Contact Details Column -->
-    <div class="col-lg-4 mb-4">
-      <h3>Contact Details</h3>
-      <p>
-        5054 Knotty Pine Court,
-        <br>Sanford, FL 32771
-        <br>
-      </p>
-      <p>
-        Phone: (561) 654-1889
-      </p>
-      <p>
-        Email: <a href="mailto:sandytiller@yahoo.com">sandytiller@yahoo.com</a>
-      </p>
-    </div>
+  <div class="row mb-4 mt-4">
+    <h1 class="col" style="text-align: center;">Have a question or want to know more?</h1>
   </div>
-  <!-- /.row -->
-
   <!-- Contact Form -->
   <div class="row">
-    <div class="col-lg-8 mb-4">
-      <h3>Send me a Message</h3>
+    <div class="col-lg-8 mb-4 mt-4">
+      <h3 class="mb-4" style="text-decoration:underline;">Leave me a Message below</h3>
       <form name="sentMessage" id="contactForm" action="https://formspree.io/sandytiller@yahoo.com" method="POST">
         <div class="control-group form-group">
           <div class="controls">
@@ -74,8 +53,35 @@
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
     </div>
-
+  
+    <!-- Contact Details Column -->
+    <div class="col-lg-4 mb-4 mt-4">
+      <h3 class="mb-4" style="text-decoration:underline;">Or reach me directly</h3>
+      <p>
+        Phone: (561) 654-1889
+      </p>
+      <p>
+        Email: <a href="mailto:sandytiller@yahoo.com">sandytiller@yahoo.com</a>
+      </p>
+    </div>
   </div>
-  <!-- /.row -->
-
+<hr>
+  <!-- Address Row -->
+  <div class="row mt-4">
+    
+    <!-- Map Header Column -->
+    <div class="col-lg-4">
+      <h3 class="mb-4" style="text-decoration:underline;">Just trying to find the place?</h3>
+      <p>
+        5054 Knotty Pine Court,
+        <br>Sanford, FL 32771
+        <br>
+      </p>
+    </div>
+    <!-- Map Column -->
+    <div class="col-lg-8 mb-4">
+      <!-- Embedded Google Map -->
+      <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=5054%20Knotty%20Pine%20Court%2C%20Sanford%2C%20FL%2032771&key=AIzaSyArq4kW9YG7EdQmexyNRFY3mDVpHtJ8MIA"></iframe>
+    </div>
+  </div>
 </div>

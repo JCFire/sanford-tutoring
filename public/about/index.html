@@ -63,6 +63,10 @@
     font-size: 2.25rem;
   }
 
+  picture img {
+    width:100%;
+  }
+
   #navbar-toggle-cbox:checked~.collapse {
     display: block;
   }
@@ -80,15 +84,7 @@
     height: auto;
     max-width: 8rem;
   }
-
-  #services img {
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-    width: 160px;
-    height: 160px;
-  }
-
+  
   .small{
     font-size:1rem;
   }
@@ -135,7 +131,8 @@ if (!doNotTrack) {
 
 </head>
 <body>
-  
+  <header>
+
 <nav class="navbar navbar-expand-lg navbar-light container">
   
   <a class="navbar-brand" href="/">
@@ -162,6 +159,7 @@ if (!doNotTrack) {
     </div>
   </div>
 </nav>
+</header>
   
   
     <main><!-- Hero Image -->
