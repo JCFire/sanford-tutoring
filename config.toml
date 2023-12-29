@@ -9,7 +9,10 @@ enableRobotsTXT = true
 [params]
   dateFormat = "6 January 2006"
   home = "Home"
-  description = "1 on 1 math instruction from certified math teacher. Geared towards homeschoolers. Pre-algebra and up. On-line or in person."
+  description = "Certified math teacher offers personalized 1-on-1 instruction for homeschoolers in pre-algebra and beyond, available both online and in person."
+  images = [
+    "images/hero-a-1110x555.jpg"
+  ]
   [params.firebase]
     measurementid = "UA-52476970-1"
     projectId = "sanford-tutoring"
@@ -18,6 +21,9 @@ enableRobotsTXT = true
 
   [params.localBusiness]
     
+[social]
+  # twitter = 
+
 [build]
   [build.buildStats]
     enable = true
@@ -33,3 +39,6 @@ enableRobotsTXT = true
   [[module.mounts]]
     source = 'node_modules/bootstrap/scss'
     target = 'assets/scss/bootstrap'
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
