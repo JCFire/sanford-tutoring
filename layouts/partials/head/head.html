@@ -1,14 +1,14 @@
 <head>
-    <meta name="test" >
-    {{ block "head/firebase" . }}{{ partial "head/firebase.html" . }}{{ end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{ block "head/content-security-policy" . }}{{ partial "head/content-security-policy.html" . }}{{ end }}
+    <meta http-equiv='Content-Security-Policy' content="script-src 'self' 'sha256-IAUa9f63+ECZWdNVrEY7SvyKfBmb0vhTEk5jpTVvZJc=' www.googletagmanager.com; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+
+    <!-- Fonts -->
+    <link rel="preload" href="/fonts/sniglet.woff2" as="font" type="font/woff2" crossorigin>
     {{ block "head/stylesheet" . }}{{ partial "head/stylesheet.html" . }}{{ end }}
     {{ block "head/seo" . }}{{ partial "head/seo.html" . }}{{ end }}
     {{ block "head/favicons" . }}{{ partial "head/favicons.html" . }}{{ end }}
+    {{ block "head/firebase" . }}{{ partial "head/firebase.html" . }}{{ end }}
     
-<!-- Fonts -->
-<link rel="preload" href="/fonts/sniglet.woff2" as="font" type="font/woff2" crossorigin>
 
 </head>
