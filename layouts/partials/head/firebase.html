@@ -1,0 +1,12 @@
+{{ with $.Site.Params.firebase }}
+
+<!-- firebase.js -->
+{{- $firebaseJs := resources.Get "js/firebase.js" -}}
+{{- $opts := dict 
+  "params" (dict "projectId" .projectId "apiKey" .apiKey "appId" .appId)
+-}}
+{{- $firebaseJs = $firebaseJs | js.Build $opts | resources.Minify | fingerprint "sha512" -}}
+
+<script async defer src="{{ $firebaseJs.Permalink }}" integrity="{{ $firebaseJs.Data.Integrity }}" crossorigin="anonymous"></script>
+
+{{ end }}

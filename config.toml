@@ -1,11 +1,33 @@
 title = "Sanford Tutoring"
+description = "1 on 1 math instruction from certified math teacher. Geared towards homeschoolers. Pre-algebra and up. On-line or in person."
 baseURL = "https://sanfordtutoring.com/"
 languageCode = "en-us"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 googleAnalytics = "UA-52476970-1"
+enableRobotsTXT = true
 
 # The site's parameters
 [params]
-
   dateFormat = "6 January 2006"
   home = "Home"
+  [params.firebase]
+    measurementid = "UA-52476970-1"
+    projectId = "sanford-tutoring"
+    apiKey = "AIzaSyCj4vR88yJH7OY13TiBuXM5soiHmdAv3IE"
+    appId = "1:93390974990:web:7def7e575a110c5a"
+    
+[build]
+  [build.buildStats]
+    enable = true
+
+[module]
+  [[module.mounts]]
+    # Workaround for https://github.com/gohugoio/hugo/issues/6945
+    source = "assets/scss/bootstrap/_vendor"
+    target = "assets/scss/bootstrap/vendor"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = 'node_modules/bootstrap/scss'
+    target = 'assets/scss/bootstrap'

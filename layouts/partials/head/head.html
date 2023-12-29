@@ -1,0 +1,14 @@
+<head>
+    <meta name="test" >
+    {{ block "head/firebase" . }}{{ partial "head/firebase.html" . }}{{ end }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ block "head/content-security-policy" . }}{{ partial "head/content-security-policy.html" . }}{{ end }}
+    {{ block "head/stylesheet" . }}{{ partial "head/stylesheet.html" . }}{{ end }}
+    {{ block "head/seo" . }}{{ partial "head/seo.html" . }}{{ end }}
+    {{ block "head/favicons" . }}{{ partial "head/favicons.html" . }}{{ end }}
+    
+<!-- Fonts -->
+<link rel="preload" href="/fonts/sniglet.woff2" as="font" type="font/woff2" crossorigin>
+
+</head>

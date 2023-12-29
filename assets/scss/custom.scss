@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Sniglet';
+  font-display: fallback;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sniglet Regular'), local('Sniglet-Regular'), url(/fonts/sniglet.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: 'Sniglet';
+  font-size: 1.5rem;
+}
+
+#title {
+  font-size: 2.25rem;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+}
+
+#navbar-toggle-cbox:checked~.collapse {
+  display: block;
+}
+
+#navbar-toggle-cbox {
+  display: none;
+}
+
+#footer{
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+
+// ABOUT
+#about {
+  .qualification {
+    padding: 1rem 0
+  }
+
+  .qualification>div>img {
+    width: 100%;
+    height: auto;
+    max-width: 8rem;
+  }
+}
+
+// 404 page
+@keyframes slideInFromLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.broken-wrapper{
+  text-align: center;
+}
+
+.broken {
+  animation: 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s 1 slideInFromLeft;
+  animation-fill-mode: forwards;
+  transform-origin: top left;
+  transform-style: preserve-3d;
+  font-size: 10rem;
+  margin:0 auto;
+  display: inline-block;
+}
+
+// TESTIMONIALS
+#testimonials {
+  .card-columns {
+    column-count: 3;
+    column-gap: 1.25rem; 
+    orphans: 1; 
+    widows: 1;
+  }
+  @include media-breakpoint-down(lg) {
+    .card-columns {
+      column-count: 2;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .card-columns {
+      column-count: 1; color:red;
+    }
+  }
+  .card {
+    break-inside: avoid-column;
+  }
+}
+
+// SERVICES
+#services {
+  img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+  }
+  @media(max-width:768px){
+    .chunk{
+      display:inline-flex; 
+      flex-wrap:wrap; 
+      justify-content:center;
+    }
+    h2{
+      text-align: center;
+    }
+  }
+}
+
+// CONTACT
+#contact {
+  .controls {width:100%;}
+}

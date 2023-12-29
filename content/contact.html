@@ -12,11 +12,9 @@ title = "Contact"
     }, 3000);
   }
 </script>
-<style>
-  header {box-shadow:0 2px 4px 0 rgba(0,0,0,0.14);}
-</style>
+
 <!-- Page Content -->
-<div class="container">
+<div id="contact" class="container">
   <div class="row mb-4 mt-4">
     <h1 class="col" style="text-align: center;">Have a question or want to know more?</h1>
   </div>
@@ -25,25 +23,25 @@ title = "Contact"
     <div class="col-lg-8 mb-4 mt-4">
       <h3 class="mb-4" style="text-decoration:underline;">Leave me a Message below</h3>
       <form name="sentMessage" id="contactForm" action="https://formspree.io/sandytiller@yahoo.com" method="POST">
-        <div class="control-group form-group">
+        <div class="control-group input-group mb-3">
           <div class="controls">
             <label>Full Name:</label>
             <input type="text" class="form-control" name="name" required>
           </div>
         </div>
-        <div class="control-group form-group">
+        <div class="control-group input-group mb-3">
           <div class="controls">
             <label>Phone Number:</label>
             <input type="tel" class="form-control" name="phone" required>
           </div>
         </div>
-        <div class="control-group form-group">
+        <div class="control-group input-group mb-3">
           <div class="controls">
             <label>Email Address:</label>
             <input type="email" class="form-control" name="email" required>
           </div>
         </div>
-        <div class="control-group form-group">
+        <div class="control-group input-group mb-3">
           <div class="controls">
             <label>Message:</label>
             <textarea rows="10" cols="100" class="form-control" name="message" maxlength="999" style="resize:none"></textarea>

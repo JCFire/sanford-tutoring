@@ -1,0 +1,3 @@
+{{- $scssOptions := dict "targetPath" "css/style.css" "enableSourceMap" true "outputStyle" "compressed" "precision" 6 -}}
+{{ $css := resources.Get "scss/styles.scss" | toCSS $scssOptions | postCSS | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" media="screen" integrity="{{ $css.Data.Integrity }}">

@@ -1,2 +1,1 @@
-run hugo
-run firebase deploy
+npm run deploy
