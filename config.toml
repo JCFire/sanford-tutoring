@@ -19,6 +19,19 @@ enableRobotsTXT = true
     appId = "1:93390974990:web:7def7e575a110c5a"
 
   [params.localBusiness]
+    image = "images/hero-a-1110x555.jpg"
+    name = "Sanford Tutoring"
+    telephone = "+15616541889"
+    priceRange = "$0-75/hr"
+    [params.localBusiness.address]
+      "streetAddress"= "5054 Knotty Pine Ct"
+      "locality" = "Sanford"
+      "region" = "FL"
+      "postalCode" = "32771"
+      "country" = "US"
+    [params.localBusiness.geo]
+      "latitude" = 28.7776532
+      "longitude" = -81.4147597
     
 [social]
   # twitter = 
