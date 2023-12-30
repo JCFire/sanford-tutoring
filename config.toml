@@ -14,7 +14,6 @@ enableRobotsTXT = true
     "images/hero-a-1110x555.jpg"
   ]
   [params.firebase]
-    measurementid = "UA-52476970-1"
     projectId = "sanford-tutoring"
     apiKey = "AIzaSyCj4vR88yJH7OY13TiBuXM5soiHmdAv3IE"
     appId = "1:93390974990:web:7def7e575a110c5a"
