@@ -9,7 +9,7 @@ enableRobotsTXT = true
 [params]
   dateFormat = "6 January 2006"
   home = "Home"
-  description = "Certified math teacher offers personalized 1-on-1 instruction for homeschoolers in pre-algebra and beyond, available both online and in person."
+  description = "Certified math teacher offering 1-on-1 instruction tailored for homeschoolers in pre-algebra and beyond, available both online and in-person."
   images = [
     "images/hero-a-1110x555.jpg"
   ]
