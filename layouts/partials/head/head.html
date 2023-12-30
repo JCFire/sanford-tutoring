@@ -5,10 +5,18 @@
 
     <!-- Fonts -->
     <link rel="preload" href="/fonts/sniglet.woff2" as="font" type="font/woff2" crossorigin>
+    {{ if .IsHome }}
+    <link rel="preload" as="image" 
+      fetchpriority="high"
+      href="/images/hero-a-1110x555.webp" 
+      imagesrcset="/images/hero-a-1110x555.webp 1110w, /images/hero-a-930x465.webp 930w, /images/hero-a-690x345.webp 690w, /images/hero-a-510x255.webp 510w" 
+      imagesizes="(min-width: 1200px) 1110px, (min-width: 992px) 930px, (min-width: 768px) 690px, (min-width: 576px) 510px">
+    {{ end }}
+    
     {{ block "head/stylesheet" . }}{{ partial "head/stylesheet.html" . }}{{ end }}
     {{ block "head/seo" . }}{{ partial "head/seo.html" . }}{{ end }}
     {{ block "head/favicons" . }}{{ partial "head/favicons.html" . }}{{ end }}
-    {{ block "head/firebase" . }}{{ partial "head/firebase.html" . }}{{ end }}
+    {{/*  {{ block "head/firebase" . }}{{ partial "head/firebase.html" . }}{{ end }}  */}}
     
 
 </head>
