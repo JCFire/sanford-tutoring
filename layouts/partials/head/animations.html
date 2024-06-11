@@ -1,0 +1,3 @@
+<!-- animations.js -->
+{{- $js := resources.Get "js/animations.js" | js.Build | resources.Minify | fingerprint "sha512" -}}
+<script async defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>

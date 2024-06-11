@@ -22,7 +22,6 @@ enableRobotsTXT = true
     image = "images/hero-a-1110x555.jpg"
     name = "Sanford Tutoring"
     telephone = "+15616541889"
-    priceRange = "$0-75/hr"
     [params.localBusiness.address]
       "streetAddress"= "5054 Knotty Pine Ct"
       "locality" = "Sanford"
@@ -41,10 +40,10 @@ enableRobotsTXT = true
     enable = true
 
 [module]
-  [[module.mounts]]
-    # Workaround for https://github.com/gohugoio/hugo/issues/6945
-    source = "assets/scss/bootstrap/_vendor"
-    target = "assets/scss/bootstrap/vendor"
+  # [[module.mounts]]
+  #   # Workaround for https://github.com/gohugoio/hugo/issues/6945
+  #   source = "assets/scss/bootstrap/_vendor"
+  #   target = "assets/scss/bootstrap/vendor"
   [[module.mounts]]
     source = "assets"
     target = "assets"
